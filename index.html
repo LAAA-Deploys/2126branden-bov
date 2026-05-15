@@ -186,6 +186,9 @@
   .src-note a { color: var(--navy); }
   .complink { color: var(--navy); text-decoration: none; border-bottom: 1px solid var(--gold); }
   .complink:hover { color: var(--gold); }
+  tr.grp td { background: var(--navy); color: var(--gold-light); font-weight: 700; font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; }
+  .unit-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 8px; }
+  @media (max-width: 720px) { .unit-grid { grid-template-columns: 1fr; } }
 
   .badge { display: inline-block; padding: 2px 9px; border-radius: 20px; font-size: 10.5px; font-weight: 700; letter-spacing: 0.4px; }
   .b-new { background: #E3F0E4; color: #2C6E36; }
@@ -310,6 +313,7 @@
       <a href="#btr">Build-to-Rent</a>
       <a href="#condo">For-Sale</a>
       <a href="#valuation">Valuation</a>
+      <a href="#challenges">Challenges</a>
       <a href="#why">Why It Trades</a>
       <a href="#contact">Contact</a>
     </div>
@@ -323,7 +327,7 @@
   <div class="cover-inner">
     <div class="cover-eyebrow">Broker Opinion of Value &mdash; Confidential</div>
     <h1>2126&ndash;2136 <span class="gold">Branden Street</span></h1>
-    <div class="subline">A 39-Unit, Permit-Ready (RTI) Development &middot; Echo Park, Los Angeles, CA 90026</div>
+    <div class="subline">A 39-Unit, Ready-to-Issue (RTI) Development &middot; Echo Park, Los Angeles, CA 90026</div>
 
     <div class="specs-row">
       <div class="spec"><div class="label">Units Approved</div><div class="value">39</div></div>
@@ -388,9 +392,9 @@
 <section id="overview">
   <div class="section-wrap">
     <div class="section-label">Section 01 &mdash; Executive Overview</div>
-    <h2 class="section-title">A Shovel-Ready Density-Bonus Project With Two Ways to Win</h2>
+    <h2 class="section-title">A Ready-to-Issue Density-Bonus Project With Two Ways to Win</h2>
     <div class="section-divider"></div>
-    <div class="section-subtitle">2126&ndash;2136 W Branden Street is a fully designed, permit-ready (Ready-to-Issue) development on two contiguous Echo Park parcels &mdash; 39 residential units entitled through the California State Density Bonus, 4 stories of wood-frame residential over 2 levels of subterranean parking. The site delivers a developer-buyer an unusually de-risked starting point: the entitlement is complete, the construction documents are drawn, and the project can pursue two distinct exits &mdash; build-to-rent or for-sale condominium.</div>
+    <div class="section-subtitle">2126&ndash;2136 W Branden Street is a fully designed, Ready-to-Issue (RTI) development on two contiguous Echo Park parcels &mdash; 39 residential units entitled through the California State Density Bonus, 4 stories of wood-frame residential over 2 levels of subterranean parking. The site delivers a developer-buyer an unusually de-risked starting point: the entitlement is complete, the construction documents are drawn, and the project can pursue two distinct exits &mdash; build-to-rent or for-sale condominium.</div>
 
     <div class="stat-grid">
       <div class="stat-tile"><div class="stat-val">39</div><div class="stat-label">Units Approved</div></div>
@@ -412,7 +416,7 @@
 <section id="project" class="section-alt">
   <div class="section-wrap">
     <div class="section-label">Section 02 &mdash; The Project</div>
-    <h2 class="section-title">39 Units, Designed and Permit-Ready</h2>
+    <h2 class="section-title">39 Units, Designed and Ready-to-Issue</h2>
     <div class="section-divider"></div>
     <div class="section-subtitle">The approved scheme is a contemporary, amenitized infill apartment building &mdash; white plaster and warm wood cladding, private balconies, a landscaped frontage, and a rooftop deck &mdash; the same design language commanding premium rents and resale prices in newer Echo Park product.</div>
 
@@ -446,8 +450,92 @@
       <div class="spec-box"><div class="sl">Existing Use</div><div class="sv">6-Unit RSO Building<small>interim income; replaced at construction</small></div></div>
     </div>
 
+    <h3 class="serif" style="color:var(--navy);font-size:22px;margin:34px 0 6px;">Unit Schedule &mdash; 39 Residential Units</h3>
+    <p style="font-size:13.5px;color:var(--muted);margin-bottom:18px;max-width:820px;">Every unit, by floor, with its plan type and net area &mdash; transcribed from the approved plan set's per-floor &ldquo;Area Per Unit&rdquo; schedules. Four residential floors (2&ndash;5) sit above the ground-floor lobby and two subterranean parking levels.</p>
+    <div class="stat-grid">
+      <div class="stat-tile"><div class="stat-val">27</div><div class="stat-label">One-Bedroom</div></div>
+      <div class="stat-tile"><div class="stat-val">8</div><div class="stat-label">Two-Bedroom</div></div>
+      <div class="stat-tile"><div class="stat-val">4</div><div class="stat-label">Three-Bedroom</div></div>
+      <div class="stat-tile"><div class="stat-val">&plusmn;33,045</div><div class="stat-label">Net Residential SF</div></div>
+      <div class="stat-tile"><div class="stat-val">847</div><div class="stat-label">Avg SF / Unit</div></div>
+    </div>
+    <div class="unit-grid">
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Unit</th><th>Plan Type</th><th class="num">Net SF</th></tr></thead>
+          <tbody>
+            <tr><td>201</td><td>2 Bed / 2 Bath</td><td class="num">1,195</td></tr>
+            <tr><td>202</td><td>1 Bed / 1 Bath</td><td class="num">782</td></tr>
+            <tr><td>203</td><td>2 Bed / 2 Bath</td><td class="num">1,195</td></tr>
+            <tr><td>204</td><td>1 Bed / 1 Bath</td><td class="num">782</td></tr>
+            <tr><td>205</td><td>1 Bed / 1 Bath</td><td class="num">681</td></tr>
+            <tr><td>206</td><td>1 Bed / 1 Bath</td><td class="num">782</td></tr>
+            <tr><td>207</td><td>1 Bed / 1 Bath</td><td class="num">681</td></tr>
+            <tr><td>208</td><td>1 Bed / 1 Bath</td><td class="num">806</td></tr>
+            <tr><td>209</td><td>3 Bed / 2 Bath</td><td class="num">986</td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="2">Second Floor &middot; 9 units</td><td class="num">7,890</td></tr></tfoot>
+        </table>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Unit</th><th>Plan Type</th><th class="num">Net SF</th></tr></thead>
+          <tbody>
+            <tr><td>301</td><td>1 Bed / 1 Bath</td><td class="num">610</td></tr>
+            <tr><td>302</td><td>2 Bed / 2 Bath</td><td class="num">1,161</td></tr>
+            <tr><td>303</td><td>1 Bed / 1 Bath</td><td class="num">782</td></tr>
+            <tr><td>304</td><td>2 Bed / 2 Bath</td><td class="num">1,114</td></tr>
+            <tr><td>305</td><td>1 Bed / 1 Bath</td><td class="num">782</td></tr>
+            <tr><td>306</td><td>1 Bed / 1 Bath</td><td class="num">681</td></tr>
+            <tr><td>307</td><td>1 Bed / 1 Bath</td><td class="num">782</td></tr>
+            <tr><td>308</td><td>1 Bed / 1 Bath</td><td class="num">681</td></tr>
+            <tr><td>309</td><td>1 Bed / 1 Bath</td><td class="num">806</td></tr>
+            <tr><td>310</td><td>3 Bed / 2 Bath</td><td class="num">986</td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="2">Third Floor &middot; 10 units</td><td class="num">8,385</td></tr></tfoot>
+        </table>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Unit</th><th>Plan Type</th><th class="num">Net SF</th></tr></thead>
+          <tbody>
+            <tr><td>401</td><td>1 Bed / 1 Bath</td><td class="num">610</td></tr>
+            <tr><td>402</td><td>2 Bed / 2 Bath</td><td class="num">1,161</td></tr>
+            <tr><td>403</td><td>1 Bed / 1 Bath</td><td class="num">782</td></tr>
+            <tr><td>404</td><td>2 Bed / 2 Bath</td><td class="num">1,114</td></tr>
+            <tr><td>405</td><td>1 Bed / 1 Bath</td><td class="num">782</td></tr>
+            <tr><td>406</td><td>1 Bed / 1 Bath</td><td class="num">681</td></tr>
+            <tr><td>407</td><td>1 Bed / 1 Bath</td><td class="num">782</td></tr>
+            <tr><td>408</td><td>1 Bed / 1 Bath</td><td class="num">681</td></tr>
+            <tr><td>409</td><td>1 Bed / 1 Bath</td><td class="num">806</td></tr>
+            <tr><td>410</td><td>3 Bed / 2 Bath</td><td class="num">986</td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="2">Fourth Floor &middot; 10 units</td><td class="num">8,385</td></tr></tfoot>
+        </table>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Unit</th><th>Plan Type</th><th class="num">Net SF</th></tr></thead>
+          <tbody>
+            <tr><td>501</td><td>1 Bed / 1 Bath</td><td class="num">610</td></tr>
+            <tr><td>502</td><td>2 Bed / 2 Bath</td><td class="num">1,161</td></tr>
+            <tr><td>503</td><td>1 Bed / 1 Bath</td><td class="num">782</td></tr>
+            <tr><td>504</td><td>2 Bed / 2 Bath</td><td class="num">1,114</td></tr>
+            <tr><td>505</td><td>1 Bed / 1 Bath</td><td class="num">782</td></tr>
+            <tr><td>506</td><td>1 Bed / 1 Bath</td><td class="num">681</td></tr>
+            <tr><td>507</td><td>1 Bed / 1 Bath</td><td class="num">782</td></tr>
+            <tr><td>508</td><td>1 Bed / 1 Bath</td><td class="num">681</td></tr>
+            <tr><td>509</td><td>1 Bed / 1 Bath</td><td class="num">806</td></tr>
+            <tr><td>510</td><td>3 Bed / 2 Bath</td><td class="num">986</td></tr>
+          </tbody>
+          <tfoot><tr><td colspan="2">Fifth Floor &middot; 10 units</td><td class="num">8,385</td></tr></tfoot>
+        </table>
+      </div>
+    </div>
+    <p class="src-note">Unit numbers, plan types and net areas per the &ldquo;Area Per Unit&rdquo; schedules on the approved plan set (sheet T-0). Plan types: 1-Bedroom &plusmn;610&ndash;806 SF (27 units), 2-Bedroom &plusmn;1,114&ndash;1,195 SF (8 units), 3-Bedroom 986 SF (4 units). Net residential area totals &plusmn;33,045 SF; the affordable / income-restricted units required by the State Density Bonus are drawn from this unit pool.</p>
+
     <div class="risk-note" style="margin-top:22px;">
-      <strong>Why RTI matters.</strong> A buyer of a Ready-to-Issue project skips the single highest-risk, longest-duration phase of ground-up development &mdash; discretionary entitlement. The State Density Bonus case is approved, the incentives (density to 39 units, FAR to 3.56:1, height to 67 ft) are secured, and the construction documents are drawn. The remaining path is plan-check sign-off, permit issuance, and construction &mdash; a materially shorter, more financeable runway than a raw or partially-entitled site.
+      <strong>Why RTI matters &mdash; and what RTI means here.</strong> A buyer of a Ready-to-Issue project skips the single highest-risk, longest-duration phase of ground-up development &mdash; discretionary entitlement. The State Density Bonus case is approved, the incentives (density to 39 units, FAR to 3.56:1, height to 67 ft) are secured, and the construction documents are complete. <strong>The property will be delivered RTI &mdash; not shovel-ready:</strong> the building permit is ready to be issued, and the buyer pulls the permit and completes the remaining pre-construction clearances and fees before breaking ground. Even so, it is a materially shorter, more financeable runway than a raw or partially-entitled site &mdash; the entitlement and the design risk are already retired.
     </div>
     <p class="src-note">Source: approved public-works / construction plan set for 2126&ndash;2136 W Branden St (cover sheet, project data, area &amp; density-bonus calculations, unit schedules). Areas per ZIMAS and the LABC area summary. Entitlement/permit status per Ownership; buyer to confirm the recorded affordability covenant, plan-check status, and permit conditions in due diligence.</p>
   </div>
@@ -463,12 +551,12 @@
 
     <div class="grid-2">
       <div>
-        <img src="images/location-map.jpg" alt="Vicinity map of 2126-2136 W Branden Street, Echo Park" style="width:100%;border-radius:8px;border:1px solid var(--border);" />
-        <div class="img-cap">Vicinity &mdash; 2126&ndash;2136 W Branden St, between Glendale Blvd and N Alvarado St, Echo Park 90026.</div>
+        <iframe title="Map — 2126-2136 W Branden St, Echo Park" src="https://www.google.com/maps?q=2126+W+Branden+St,+Los+Angeles,+CA+90026&z=16&output=embed" style="width:100%;height:430px;border:1px solid var(--border);border-radius:8px;display:block;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="img-cap">Interactive map &mdash; 2126&ndash;2136 W Branden St, between Glendale Blvd and N Alvarado St, Echo Park 90026.</div>
       </div>
       <div class="narrative">
         <p><strong>A renter and buyer magnet.</strong> Echo Park has spent a decade as one of Los Angeles' most sought-after creative-class neighborhoods. Walkable to Echo Park Lake, the Sunset Blvd corridor, and Historic Filipinotown, it draws a deep, durable pool of tenants and buyers &mdash; and consistently leases and resells at a premium to the broader Eastside.</p>
-        <p><strong>Supply is structurally tight.</strong> Small lots, hillside topography, and rent-stabilized older stock keep new deliveries scarce. Recent newer-construction projects &mdash; Encore Echo Park, Zag Apartments, Inspire Echo Park, 1915 Park, 222 Alvarado &mdash; have leased up at strong rents within blocks of the subject, evidence of demand depth rather than oversupply.</p>
+        <p><strong>Supply is structurally tight.</strong> Small lots, hillside topography, and rent-stabilized older stock keep new deliveries scarce. Recent newer-construction projects &mdash; Zag, Inspire, OnSunset, Echo 55, 1915 Park and Encore among them &mdash; have leased up at strong rents within blocks of the subject, evidence of demand depth rather than oversupply.</p>
         <p><strong>Pricing strength.</strong> As of mid-2026 Echo Park's median home price sits near <strong>$1.30&ndash;$1.35 million</strong>, with for-sale condominiums and townhomes trading in an approximate <strong>$650,000&ndash;$1,050,000</strong> range &mdash; the band the subject's finished units are designed to hit.</p>
       </div>
     </div>
@@ -488,8 +576,8 @@
       <div class="path a">
         <div class="ptag">Strategy A &mdash; Build to Rent</div>
         <h3>Stabilized Apartment Asset</h3>
-        <div class="pval">&plusmn;$15.5M</div>
-        <p>Build, lease, and hold (or sell) a 39-unit Class-A apartment building. Stabilized value at a 5.25% cap on &plusmn;$817K NOI &mdash; supported by proven newer-construction Echo Park rents.</p>
+        <div class="pval">&plusmn;$19.3M</div>
+        <p>Build, lease, and hold (or sell) a 39-unit Class-A apartment building. Stabilized value at a 5.25% cap on &plusmn;$1.0M NOI &mdash; supported by proven newer-construction Echo Park rents, trended to a 2028 delivery.</p>
       </div>
       <div class="path b">
         <div class="ptag">Strategy B &mdash; Build for Sale</div>
@@ -510,102 +598,73 @@
     <div class="section-divider"></div>
     <div class="section-subtitle">Newer-construction apartment buildings within a few blocks of the subject &mdash; all delivered 2021&ndash;2025 &mdash; establish the rents a completed 2126&ndash;2136 Branden would command. These are the direct rent comparables: same submarket, same vintage of finish, same mid-rise format.</div>
 
-    <h3 class="serif" style="color:var(--navy);font-size:20px;margin-bottom:6px;">Newer-Construction Rent Comparables &mdash; Echo Park</h3>
+    <h3 class="serif" style="color:var(--navy);font-size:20px;margin-bottom:6px;">Rent Comparables by Unit Type &mdash; Newer-Construction Echo Park</h3>
     <div class="table-scroll">
       <table>
         <thead>
           <tr>
-            <th>Building</th>
-            <th>Address</th>
+            <th>Property</th>
             <th class="num">Built</th>
-            <th class="num">Units</th>
-            <th>Unit Types &amp; Size</th>
-            <th>Asking Rents</th>
-            <th class="num">&plusmn;$/SF</th>
+            <th class="num">Avg SF</th>
+            <th>Asking Rent / mo</th>
+            <th class="num">Rent / SF</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td><a class="complink" href="https://encoreechopark.com/" target="_blank" rel="noopener"><strong>Encore Echo Park</strong></a> <span class="badge b-new">NEW</span></td>
-            <td>226 N Lake St</td>
-            <td class="num">2021</td>
-            <td class="num">36</td>
-            <td>Studio 473 SF &middot; 1BR 668 SF &middot; 2BR 816&ndash;1,208 SF</td>
-            <td>Studio fr. $1,795 &middot; 1BR &plusmn;$2,500&ndash;2,600 &middot; 2BR &plusmn;$3,295</td>
-            <td class="num">$3.70&ndash;4.00</td>
-          </tr>
-          <tr>
-            <td><a class="complink" href="https://www.222alvarado.rent/" target="_blank" rel="noopener"><strong>222 Alvarado</strong></a> <span class="badge b-new">NEW</span></td>
-            <td>222 N Alvarado St</td>
-            <td class="num">2025</td>
-            <td class="num">&plusmn;40</td>
-            <td>1BR &plusmn;650 SF (studio&ndash;2BR mix)</td>
-            <td>1BR $2,500&ndash;$2,935</td>
-            <td class="num">$3.85&ndash;4.50</td>
-          </tr>
-          <tr>
-            <td><a class="complink" href="https://www.inspire-echopark.com/" target="_blank" rel="noopener"><strong>Inspire Echo Park</strong></a> <span class="badge b-new">NEW</span></td>
-            <td>355 Glendale Blvd</td>
-            <td class="num">2024</td>
-            <td class="num">90</td>
-            <td>Studio&ndash;3BR &middot; 319&ndash;1,116 SF</td>
-            <td>Studio fr. $2,271 &middot; 1BR fr. $2,103 &middot; 2BR fr. $2,836 &middot; 3BR fr. $6,032</td>
-            <td class="num">$3.30&ndash;4.20</td>
-          </tr>
-          <tr>
-            <td><a class="complink" href="https://www.apartments.com/zag-apartments-los-angeles-ca/2ey781b/" target="_blank" rel="noopener"><strong>Zag Apartments</strong></a> <span class="badge b-new">NEW</span></td>
-            <td>1750 Glendale Blvd</td>
-            <td class="num">2022</td>
-            <td class="num">70</td>
-            <td>Studio 550&ndash;604 SF &middot; 1BR 705 SF &middot; 2BR 977&ndash;1,034 SF</td>
-            <td>Studio $2,195&ndash;$2,495 &middot; 1BR $2,950 &middot; 2BR $3,495&ndash;$3,895</td>
-            <td class="num">$3.40&ndash;4.20</td>
-          </tr>
-          <tr>
-            <td><a class="complink" href="https://www.apartments.com/1915-park-los-angeles-ca/kxy5zeb/" target="_blank" rel="noopener"><strong>1915 Park</strong></a> <span class="badge b-new">NEW</span></td>
-            <td>1915 Park Ave</td>
-            <td class="num">2025</td>
-            <td class="num">&mdash;</td>
-            <td>Studio 388&ndash;514 SF &middot; 1BR 594&ndash;778 SF &middot; 2BR 964&ndash;1,192 SF</td>
-            <td>Studio $2,399&ndash;$2,714 &middot; 1BR fr. $3,493 &middot; 2BR $4,899&ndash;$5,235</td>
-            <td class="num">$4.70&ndash;6.80</td>
-          </tr>
-          <tr>
-            <td>Echo Park &mdash; market average (all vintages)</td>
-            <td>Neighborhood</td>
-            <td class="num">mixed</td>
-            <td class="num">&mdash;</td>
-            <td>Studio 606 &middot; 1BR 666 &middot; 2BR 991 &middot; 3BR 1,058 SF</td>
-            <td>Studio $2,234 &middot; 1BR $2,436 &middot; 2BR $3,427 &middot; 3BR $3,954</td>
-            <td class="num">$3.46&ndash;3.74</td>
-          </tr>
-          <tr class="subject-row">
-            <td><strong>SUBJECT &mdash; 2126-2136 Branden</strong></td>
-            <td>2126-2136 W Branden St</td>
-            <td class="num">2027&ndash;28E</td>
-            <td class="num">39</td>
-            <td>1, 2 &amp; 3BR &middot; &plusmn;610&ndash;1,195 SF &middot; avg 847 SF</td>
-            <td>Underwritten blended &plusmn;$2,800/mo (market units)</td>
-            <td class="num">&plusmn;$3.30</td>
-          </tr>
+          <tr class="grp"><td colspan="5">Studio</td></tr>
+          <tr><td><a class="complink" href="https://encoreechopark.com/" target="_blank" rel="noopener">Encore Echo Park</a> &middot; 226 N Lake St</td><td class="num">2021</td><td class="num">473</td><td>$1,795&ndash;$1,950</td><td class="num">$3.96</td></tr>
+          <tr><td><a class="complink" href="https://www.inspire-echopark.com/" target="_blank" rel="noopener">Inspire Echo Park</a> &middot; 355 Glendale Blvd</td><td class="num">2024</td><td class="num">319&ndash;469</td><td>$2,271&ndash;$2,860</td><td class="num">$6.35</td></tr>
+          <tr><td><a class="complink" href="https://www.apartments.com/zag-apartments-los-angeles-ca/2ey781b/" target="_blank" rel="noopener">Zag Apartments</a> &middot; 1750 Glendale Blvd</td><td class="num">2022</td><td class="num">550&ndash;604</td><td>$2,195&ndash;$2,495</td><td class="num">$4.06</td></tr>
+          <tr><td><a class="complink" href="https://www.apartments.com/1915-park-los-angeles-ca/kxy5zeb/" target="_blank" rel="noopener">1915 Park</a> &middot; 1915 Park Ave</td><td class="num">2025</td><td class="num">388&ndash;514</td><td>$2,399&ndash;$2,714</td><td class="num">$5.65</td></tr>
+          <tr><td><a class="complink" href="https://www.apartments.com/onsunset-los-angeles-ca/19zyy07/" target="_blank" rel="noopener">OnSunset</a> &middot; 2225 W Sunset Blvd</td><td class="num">2025</td><td class="num">370&ndash;518</td><td>$2,450&ndash;$2,760</td><td class="num">$5.85</td></tr>
+
+          <tr class="grp"><td colspan="5">One-Bedroom</td></tr>
+          <tr><td><a class="complink" href="https://encoreechopark.com/" target="_blank" rel="noopener">Encore Echo Park</a> &middot; 226 N Lake St</td><td class="num">2021</td><td class="num">668</td><td>$2,500&ndash;$2,600</td><td class="num">$3.82</td></tr>
+          <tr><td><a class="complink" href="https://www.inspire-echopark.com/" target="_blank" rel="noopener">Inspire Echo Park</a> &middot; 355 Glendale Blvd</td><td class="num">2024</td><td class="num">523&ndash;580</td><td>$2,900&ndash;$3,500</td><td class="num">$5.80</td></tr>
+          <tr><td><a class="complink" href="https://www.apartments.com/zag-apartments-los-angeles-ca/2ey781b/" target="_blank" rel="noopener">Zag Apartments</a> &middot; 1750 Glendale Blvd</td><td class="num">2022</td><td class="num">705</td><td>$2,950</td><td class="num">$4.18</td></tr>
+          <tr><td><a class="complink" href="https://www.apartments.com/1915-park-los-angeles-ca/kxy5zeb/" target="_blank" rel="noopener">1915 Park</a> &middot; 1915 Park Ave</td><td class="num">2025</td><td class="num">594&ndash;778</td><td>$3,493&ndash;$3,659</td><td class="num">$5.21</td></tr>
+          <tr><td><a class="complink" href="https://www.apartments.com/echo-55-los-angeles-ca/zlkzfzy/" target="_blank" rel="noopener">Echo 55</a> &middot; 1655 N Allesandro St</td><td class="num">2025</td><td class="num">&plusmn;850</td><td>$2,750&ndash;$3,200</td><td class="num">$3.65</td></tr>
+          <tr><td><a class="complink" href="https://www.apartments.com/onsunset-los-angeles-ca/19zyy07/" target="_blank" rel="noopener">OnSunset</a> &middot; 2225 W Sunset Blvd</td><td class="num">2025</td><td class="num">514&ndash;1,106</td><td>$3,275&ndash;$4,300</td><td class="num">$5.15</td></tr>
+          <tr class="subject-row"><td><strong>SUBJECT &mdash; 2126-2136 Branden</strong> &middot; 27 units</td><td class="num">2028E</td><td class="num">737</td><td><strong>$3,150</strong></td><td class="num"><strong>$4.27</strong></td></tr>
+
+          <tr class="grp"><td colspan="5">Two-Bedroom</td></tr>
+          <tr><td><a class="complink" href="https://encoreechopark.com/" target="_blank" rel="noopener">Encore Echo Park</a> &middot; 226 N Lake St</td><td class="num">2021</td><td class="num">816&ndash;1,208</td><td>&asymp;$3,295</td><td class="num">&asymp;$3.25</td></tr>
+          <tr><td><a class="complink" href="https://www.inspire-echopark.com/" target="_blank" rel="noopener">Inspire Echo Park</a> &middot; 355 Glendale Blvd</td><td class="num">2024</td><td class="num">1,081&ndash;1,116</td><td>$5,254&ndash;$5,354</td><td class="num">$4.83</td></tr>
+          <tr><td><a class="complink" href="https://www.apartments.com/zag-apartments-los-angeles-ca/2ey781b/" target="_blank" rel="noopener">Zag Apartments</a> &middot; 1750 Glendale Blvd</td><td class="num">2022</td><td class="num">977&ndash;1,034</td><td>$3,495&ndash;$3,895</td><td class="num">$3.67</td></tr>
+          <tr><td><a class="complink" href="https://www.apartments.com/1915-park-los-angeles-ca/kxy5zeb/" target="_blank" rel="noopener">1915 Park</a> &middot; 1915 Park Ave</td><td class="num">2025</td><td class="num">964&ndash;1,192</td><td>$4,899&ndash;$5,235</td><td class="num">$4.70</td></tr>
+          <tr><td><a class="complink" href="https://www.apartments.com/echo-55-los-angeles-ca/zlkzfzy/" target="_blank" rel="noopener">Echo 55</a> &middot; 1655 N Allesandro St</td><td class="num">2025</td><td class="num">&plusmn;1,050</td><td>$3,350&ndash;$3,950</td><td class="num">$3.48</td></tr>
+          <tr><td><a class="complink" href="https://www.apartments.com/onsunset-los-angeles-ca/19zyy07/" target="_blank" rel="noopener">OnSunset</a> &middot; 2225 W Sunset Blvd</td><td class="num">2025</td><td class="num">1,005&ndash;1,178</td><td>$4,100&ndash;$5,400</td><td class="num">$4.35</td></tr>
+          <tr class="subject-row"><td><strong>SUBJECT &mdash; 2126-2136 Branden</strong> &middot; 8 units</td><td class="num">2028E</td><td class="num">1,152</td><td><strong>$4,250</strong></td><td class="num"><strong>$3.69</strong></td></tr>
+
+          <tr class="grp"><td colspan="5">Three-Bedroom</td></tr>
+          <tr><td><a class="complink" href="https://www.inspire-echopark.com/" target="_blank" rel="noopener">Inspire Echo Park</a> &middot; 355 Glendale Blvd</td><td class="num">2024</td><td class="num">1,089</td><td>$6,032&ndash;$6,182</td><td class="num">$5.61</td></tr>
+          <tr class="subject-row"><td><strong>SUBJECT &mdash; 2126-2136 Branden</strong> &middot; 4 units</td><td class="num">2028E</td><td class="num">986</td><td><strong>$4,300</strong></td><td class="num"><strong>$4.36</strong></td></tr>
         </tbody>
       </table>
     </div>
-    <p class="src-note">Sources: Apartments.com, Zumper, RentCafe and building operator and listing sources for Encore Echo Park (226 N Lake St), Zag Apartments (1750 Glendale Blvd), Inspire Echo Park (355 Glendale Blvd), 1915 Park (1915 Park Ave) and 222 Alvarado / Alvarado House (222 N Alvarado St); RentCafe Echo Park rent-market trends (neighborhood averages). 1915 Park total unit count not publicly disclosed. Rents are advertised asking rents current as of May 2026 and exclude concessions. The subject's underwritten rent is a blended market-unit assumption applied to the project's &plusmn;847 SF average unit; income-restricted units are underwritten separately below.</p>
+    <p class="src-note">Sources: Apartments.com, Zumper, RentCafe and building operator/listing pages for Encore Echo Park (226 N Lake St, 2021), Inspire Echo Park (355 Glendale Blvd, 2024), Zag Apartments (1750 Glendale Blvd, 2022), 1915 Park (1915 Park Ave, 2025), Echo 55 (1655 N Allesandro St, 2025) and OnSunset (2225 W Sunset Blvd, 2025). Rents are advertised asking rents current as of May 2026, shown for the representative unit of each type, and exclude lease-up concessions; SF is the representative net size and Rent/SF is rent &divide; SF. Several comps are in active lease-up; Encore two-bedroom figures are approximate. Subject figures are underwriting assumptions &mdash; see the note below.</p>
+
+    <div class="risk-note">
+      <strong>Why the subject underwrites above today's comp set.</strong> The subject is positioned to a blended rent of <strong>&plusmn;$3,494/mo &mdash; &plusmn;$4.13/SF, north of $4.00/SF</strong> (1BR $3,150 &middot; 2BR $4,250 &middot; 3BR $4,300). That sits above several in-place comps for two deliberate, defensible reasons. <strong>(1) Delivery timing</strong> &mdash; the project completes in roughly three years (2028E); the comp rents above are today's dollars, and even modest rent growth over that window carries the market to the subject's level. <strong>(2) Location</strong> &mdash; the Glendale Boulevard&ndash;corridor parcel is a stronger location than much of the comp set. The underwritten figure remains within the band already achieved <em>today</em> by the 2025-vintage comps (1915 Park, OnSunset).
+    </div>
 
     <div class="grid-2" style="margin-top:18px;">
       <div class="card">
         <h3>Stabilized NOI &mdash; 39 Units</h3>
         <ul class="tight">
-          <li><span class="l">36 market units &times; &plusmn;$2,800/mo</span><span class="v">$1,209,600</span></li>
-          <li><span class="l">3 very-low-income units &times; &plusmn;$1,200/mo</span><span class="v">$43,200</span></li>
+          <li><span class="l">24 market 1BR &times; $3,150/mo</span><span class="v">$75,600</span></li>
+          <li><span class="l">8 market 2BR &times; $4,250/mo</span><span class="v">$34,000</span></li>
+          <li><span class="l">4 market 3BR &times; $4,300/mo</span><span class="v">$17,200</span></li>
+          <li><span class="l">3 very-low-income units &times; &plusmn;$1,200/mo</span><span class="v">$3,600</span></li>
+          <li><span class="l">Annualized residential rent</span><span class="v">$1,564,800</span></li>
           <li><span class="l">Parking, storage &amp; other income</span><span class="v">$30,000</span></li>
-          <li><span class="l">Gross Potential Income</span><span class="v">$1,282,800</span></li>
-          <li><span class="l">Less vacancy &amp; collection (5%)</span><span class="v">($64,140)</span></li>
-          <li><span class="l">Effective Gross Income</span><span class="v">$1,218,660</span></li>
-          <li><span class="l">Less operating expenses (&plusmn;33%, incl. taxes)</span><span class="v">($402,000)</span></li>
-          <li class="total"><span class="l">Net Operating Income</span><span class="v">&plusmn;$816,660</span></li>
+          <li><span class="l">Gross Potential Income</span><span class="v">$1,594,800</span></li>
+          <li><span class="l">Less vacancy &amp; collection (5%)</span><span class="v">($79,740)</span></li>
+          <li><span class="l">Effective Gross Income</span><span class="v">$1,515,060</span></li>
+          <li><span class="l">Less operating expenses (&plusmn;33%, incl. taxes)</span><span class="v">($500,000)</span></li>
+          <li class="total"><span class="l">Net Operating Income</span><span class="v">&plusmn;$1,015,000</span></li>
         </ul>
+        <p style="font-size:12px;color:var(--muted);margin-top:10px;">Market rents per the by-type analysis above (blended &plusmn;$4.13/SF). Three very-low-income units assumed drawn from the 1BR pool.</p>
       </div>
       <div class="card">
         <h3>Stabilized Value Sensitivity</h3>
@@ -613,18 +672,18 @@
           <table>
             <thead><tr><th>Exit Cap</th><th class="num">Stabilized Value</th><th class="num">Per Unit</th></tr></thead>
             <tbody>
-              <tr><td>5.00%</td><td class="num">$16,333,000</td><td class="num">$418,800</td></tr>
-              <tr style="background:#FBF6E9;"><td><strong>5.25% (base)</strong></td><td class="num"><strong>$15,556,000</strong></td><td class="num"><strong>$398,900</strong></td></tr>
-              <tr><td>5.50%</td><td class="num">$14,848,000</td><td class="num">$380,700</td></tr>
+              <tr><td>5.00%</td><td class="num">$20,300,000</td><td class="num">$520,500</td></tr>
+              <tr style="background:#FBF6E9;"><td><strong>5.25% (base)</strong></td><td class="num"><strong>$19,333,000</strong></td><td class="num"><strong>$495,700</strong></td></tr>
+              <tr><td>5.50%</td><td class="num">$18,455,000</td><td class="num">$473,200</td></tr>
             </tbody>
           </table>
         </div>
-        <p style="font-size:13px;color:var(--muted);">Stabilized value = NOI &divide; cap rate. Newer Class-A apartment product in supply-constrained Eastside submarkets has traded in a roughly 4.75%&ndash;5.50% range; 5.25% is used as the base case.</p>
+        <p style="font-size:13px;color:var(--muted);">Stabilized value = NOI &divide; cap rate. Newer Class-A apartment product in supply-constrained Eastside submarkets has traded in a roughly 4.75%&ndash;5.50% range; 5.25% is the base case.</p>
       </div>
     </div>
 
     <div class="risk-note">
-      <strong>Reading the rental rail.</strong> The build-and-rent strategy produces a stabilized, financeable, institutional-quality asset worth roughly <strong>$15.5 million</strong> &mdash; and the rent comparables prove the demand is real and the rents are bankable. For a long-term holder this is a credible path. As the valuation section shows, however, current construction costs make the <em>for-sale</em> exit the stronger value driver; the rental rail is best understood as the floor and the optionality, not the ceiling.
+      <strong>Reading the rental rail.</strong> The build-and-rent strategy produces a stabilized, financeable, institutional-quality asset worth roughly <strong>$19.3 million</strong> at a 5.25% cap &mdash; and the rent comparables prove the demand is real and the rents bankable. Against an estimated all-in development cost of &plusmn;$19.7M, the rental rail roughly carries its own cost on an untrended basis, and turns modestly positive once rents are trended across the build period &mdash; a genuine path for a long-term holder. The <em>for-sale</em> exit, however, remains the stronger value driver, and the recommended site value is set off it; read the rental rail as the financeable floor and the optionality, not the ceiling.
     </div>
   </div>
 </section>
@@ -701,10 +760,10 @@
         <h3>Gross Condominium Sellout</h3>
         <ul class="tight">
           <li><span class="l">36 market units &middot; 30,492 SF &times; $875/SF</span><span class="v">$26,680,500</span></li>
-          <li><span class="l">3 income-restricted units (restricted resale)</span><span class="v">$975,000</span></li>
+          <li><span class="l">3 affordable units &middot; &plusmn;$325K each (restricted)</span><span class="v">$975,000</span></li>
           <li class="total"><span class="l">Gross Sellout (base case)</span><span class="v">&plusmn;$27,655,000</span></li>
         </ul>
-        <p style="font-size:13px;color:var(--muted);margin-top:12px;">Base case applies $875/SF to the 36 market units' &plusmn;30,492 SF of net residential area. Income-restricted units are valued at an affordable-ownership placeholder pending the recorded covenant terms.</p>
+        <p style="font-size:13px;color:var(--muted);margin-top:12px;">Base case applies $875/SF to the 36 market units' &plusmn;30,492 SF of net residential area. The income-restricted units are carried at a &plusmn;$325,000 placeholder &mdash; see the note below.</p>
       </div>
       <div class="card">
         <h3>Sellout Sensitivity &mdash; $/SF</h3>
@@ -720,6 +779,10 @@
         </div>
         <p style="font-size:13px;color:var(--muted);">Across the band, average market-unit pricing of &plusmn;$680K&ndash;$805K sits comfortably within Echo Park's active condominium range &mdash; an absorbable, not aspirational, price point.</p>
       </div>
+    </div>
+
+    <div class="risk-note">
+      <strong>The affordable units do not sell at market.</strong> The State Density Bonus that creates the 39-unit count is unlocked by a recorded affordability covenant. If the project is condominium-mapped, the income-restricted units may only be sold to income-qualified (very-low-income) households at a covenant-restricted price &mdash; realistically on the order of <strong>$300,000&ndash;$400,000 per unit</strong>, a steep discount to the $700K&ndash;$1M+ a comparable market unit commands. This BOV carries them at a &plusmn;$325,000 placeholder; the exact restricted price, the number of restricted units, and whether they are sold or retained as rentals all follow the recorded covenant &mdash; a buyer should confirm the covenant terms in due diligence.
     </div>
   </div>
 </section>
@@ -762,7 +825,7 @@
     </div>
 
     <div class="risk-note">
-      <strong>Cross-checks.</strong> At the recommended figure the site trades at roughly <strong>$83,000 per approved unit</strong> and <strong>$218 per lot SF</strong> &mdash; a clear, defensible premium over raw R3 land (a comparable unentitled lot at &plusmn;$110/SF implies &plusmn;$1.6M), with the spread representing the value of the completed State Density Bonus entitlement, the RTI permit posture, and the eliminated 18&ndash;24 months of entitlement risk and carry. It also reconciles to the as-is value of the existing 6-unit RSO building plus that entitlement premium. The build-to-rent rail (&plusmn;$15.5M stabilized) does not independently support a higher residual at current construction costs, but provides a buyer a fully financeable fallback business plan.
+      <strong>Cross-checks.</strong> At the recommended figure the site trades at roughly <strong>$83,000 per approved unit</strong> and <strong>$218 per lot SF</strong> &mdash; a clear, defensible premium over raw R3 land (a comparable unentitled lot at &plusmn;$110/SF implies &plusmn;$1.6M), with the spread representing the value of the completed State Density Bonus entitlement, the RTI permit posture, and the eliminated 18&ndash;24 months of entitlement risk and carry. It also reconciles to the as-is value of the existing 6-unit RSO building plus that entitlement premium. The build-to-rent rail (&plusmn;$19.3M stabilized) roughly carries the &plusmn;$19.7M development cost on its own &mdash; a fully financeable fallback business plan &mdash; while the for-sale exit drives the residual site value shown above.
     </div>
 
     <div class="pricing-hero">
@@ -775,10 +838,57 @@
   </div>
 </section>
 
+<!-- OBJECTIONS & CHALLENGES -->
+<section id="challenges">
+  <div class="section-wrap">
+    <div class="section-label">Section 08 &mdash; Objections &amp; Challenges</div>
+    <h2 class="section-title">The Headwinds &mdash; and How This Deal Answers Them</h2>
+    <div class="section-divider"></div>
+    <div class="section-subtitle">Los Angeles ground-up development carries real cost, capital, and regulatory headwinds in 2026, and a credible valuation names them. Each challenge below is genuine &mdash; and each is one this specific site, entitled and RTI with a dual exit and priced to a developer's basis, is unusually well-positioned to absorb.</div>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3>1 &middot; Construction Costs</h3>
+        <p><strong>The challenge.</strong> LA hard-construction costs are elevated and have been volatile. Type V-A wood-frame over a two-level subterranean concrete garage is a cost-heavy configuration, and a 4-story project carries meaningful steel, concrete, insurance, and labor exposure.</p>
+        <p><strong>How this deal answers it.</strong> Cost is the single biggest swing variable, and this BOV labels it as an assumption to be re-run against the buyer's own GC pricing. Two structural mitigants: the project is RTI, so design and entitlement cost risk is already retired; and under AB 2097 <em>no parking is required</em> &mdash; a buyer can value-engineer the subterranean levels down or out and strip out the most expensive part of the budget. Pricing is set to leave room for the buyer's hard-cost reality.</p>
+      </div>
+      <div class="card">
+        <h3>2 &middot; Capital &amp; Interest Rates</h3>
+        <p><strong>The challenge.</strong> Construction financing is expensive, underwriting is tight, and merchant-build profit margins are compressed versus the last cycle.</p>
+        <p><strong>How this deal answers it.</strong> The site trades at a low absolute basis (&plusmn;$3.25M), so the capital stack is anchored by a modest land number. RTI status shortens the pre-construction period a lender will not finance, and the dual rental/for-sale exit gives a construction lender two independent take-out paths &mdash; real credit comfort on a spec development.</p>
+      </div>
+      <div class="card">
+        <h3>3 &middot; The Affordability Covenant</h3>
+        <p><strong>The challenge.</strong> The density bonus is unlocked by a recorded affordability covenant; the income-restricted units rent and sell well below market.</p>
+        <p><strong>How this deal answers it.</strong> The covenant is the very thing that created the 2.05&times; density (19 &rarr; 39 units) &mdash; a trade developers make willingly. The restricted units are already netted out of both the rental NOI and the condominium sellout in this BOV; the project pencils <em>after</em> that haircut, not before it.</p>
+      </div>
+      <div class="card">
+        <h3>4 &middot; RSO Tenants &amp; Demolition</h3>
+        <p><strong>The challenge.</strong> Six rent-stabilized units occupy the site today and must be cleared, triggering tenant-relocation cost and process before construction.</p>
+        <p><strong>How this deal answers it.</strong> Relocation is a known, budgetable item and is carried inside the development-cost estimate. Until construction, the existing 6-unit building produces interim holding income that offsets carry through plan-check and financing &mdash; a rare offset on a development-stage site.</p>
+      </div>
+      <div class="card">
+        <h3>5 &middot; RTI Is Not Shovel-Ready</h3>
+        <p><strong>The challenge.</strong> &ldquo;RTI&rdquo; is not a building permit in hand &mdash; the buyer still pulls the permit, pays fees, and clears final pre-construction conditions before breaking ground.</p>
+        <p><strong>How this deal answers it.</strong> True, and stated plainly throughout this BOV. But RTI sits far down the timeline: the discretionary entitlement &mdash; the State Density Bonus case &mdash; is approved and plan check is essentially complete. The longest, least certain, most capital-destroying phase of LA development is already behind the project.</p>
+      </div>
+      <div class="card">
+        <h3>6 &middot; Market Timing &amp; Absorption</h3>
+        <p><strong>The challenge.</strong> The project delivers in roughly three years, into a for-sale and rental market no one can forecast with certainty; absorption and exit pricing carry risk.</p>
+        <p><strong>How this deal answers it.</strong> The dual exit is the hedge &mdash; soft for-sale market at delivery, the buyer leases and holds; soft rental market, they sell condominiums. Echo Park is structurally supply-constrained, and the newer-construction comps in Section 05 are leasing and selling <em>now</em>. Underwriting is held at conservative-to-mid assumptions, not peak-of-cycle ones.</p>
+      </div>
+    </div>
+
+    <div class="risk-note">
+      <strong>Net read.</strong> None of these headwinds is unique to 2126&ndash;2136 Branden &mdash; they apply to every ground-up project in Los Angeles. What is unique here is how much of the risk has already been bought down: the entitlement is approved, the design is RTI, the parking is optional under AB 2097, interim RSO income is in place, and the deal carries two exits instead of one. The recommended &plusmn;$3.25M basis also sits below the &plusmn;$5.15M Measure ULA threshold, so the land transaction itself is not exposed to the City of Los Angeles transfer tax. The challenges are real; the site is built to absorb them.
+    </div>
+  </div>
+</section>
+
 <!-- WHY IT TRADES -->
 <section id="why" class="section-alt">
   <div class="section-wrap">
-    <div class="section-label">Section 08 &mdash; Investment Summary</div>
+    <div class="section-label">Section 09 &mdash; Investment Summary</div>
     <h2 class="section-title">Why 2126&ndash;2136 Branden Trades</h2>
     <div class="section-divider"></div>
 
@@ -796,12 +906,12 @@
       <div class="highlight-card">
         <div class="h-num">03</div>
         <div class="h-title">Two Independent Exits</div>
-        <p>Build-to-rent for a stabilized &plusmn;$15.5M asset, or condominium sellout near &plusmn;$27.7M gross. A buyer chooses the business plan that fits their capital.</p>
+        <p>Build-to-rent for a stabilized &plusmn;$19.3M asset, or condominium sellout near &plusmn;$27.7M gross. A buyer chooses the business plan that fits their capital.</p>
       </div>
       <div class="highlight-card">
         <div class="h-num">04</div>
         <div class="h-title">Proven, Bankable Rents</div>
-        <p>Zag, Encore, Inspire, 1915 Park and 222 Alvarado &mdash; all newer construction within blocks &mdash; have leased up at strong rents, de-risking the rental underwriting with real market evidence.</p>
+        <p>Six newer-construction buildings within blocks &mdash; Zag, Encore, Inspire, OnSunset, Echo 55 and 1915 Park &mdash; have leased up at strong rents, de-risking the rental underwriting with real market evidence.</p>
       </div>
       <div class="highlight-card">
         <div class="h-num">05</div>
@@ -811,7 +921,7 @@
       <div class="highlight-card">
         <div class="h-num">06</div>
         <div class="h-title">Interim Income in Place</div>
-        <p>An existing 6-unit RSO building generates holding income through plan-check and financing &mdash; a rare carry offset on an otherwise shovel-ready development site.</p>
+        <p>An existing 6-unit RSO building generates holding income through pre-construction and financing &mdash; a rare carry offset on a Ready-to-Issue development site.</p>
       </div>
     </div>
 
@@ -825,7 +935,7 @@
 <!-- CONTACT / FOOTER -->
 <footer class="team-footer" id="contact">
   <div class="footer-wrap">
-    <div class="section-label" style="color: var(--gold);">Section 09 &mdash; Contact</div>
+    <div class="section-label" style="color: var(--gold);">Section 10 &mdash; Contact</div>
     <h2 class="section-title" style="color: var(--white);">The Ziegler Group &amp; the LAAA Team</h2>
     <div class="section-divider"></div>
     <p style="opacity:0.85;max-width:760px;margin-bottom:30px;font-size:15px;">A combined multifamily and development advisory practice at Marcus &amp; Millichap &mdash; over $2.5 billion in apartment transactions and a dedicated Los Angeles development team. Contact any advisor to discuss 2126&ndash;2136 Branden Street.</p>
