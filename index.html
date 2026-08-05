@@ -283,6 +283,21 @@
   .pricing-hero .pm { font-size: 13px; margin-top: 10px; opacity: 0.85; }
 
   /* FOOTER */
+  .path-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:18px 0 8px}
+  .path-card{border:1px solid var(--border);border-radius:8px;overflow:hidden;display:flex;flex-direction:column;background:#fff}
+  .path-card .ph{padding:16px 18px;color:#fff}
+  .path-card.pa .ph{background:linear-gradient(135deg,#1B3A5C,#2d5585)}
+  .path-card.pc .ph{background:linear-gradient(135deg,#8a6f2a,#C5A258)}
+  .path-card.pd .ph{background:linear-gradient(135deg,#1f5e3a,#4a7c3f)}
+  .path-card .ph .ptag{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;opacity:.88;margin-bottom:6px}
+  .path-card .ph .pname{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;line-height:1.2}
+  .path-card .ph .punits{font-size:13px;opacity:.92;margin-top:4px}
+  .path-card .pb-body{padding:16px 20px;font-size:13.5px;flex:1}
+  .path-card .pb-body ul{margin:0 0 0 18px;padding:0}
+  .path-card .pb-body li{margin-bottom:7px;line-height:1.55}
+  .path-card .pmetric{display:flex;justify-content:space-between;padding:9px 20px;border-top:1px dashed var(--border);font-size:12.5px}
+  .path-card .pmetric .l{color:var(--muted)}
+  .path-card .pmetric .v{font-weight:700;color:var(--navy)}
   footer.team-footer { background: var(--navy); color: var(--white); padding: 64px 24px 34px; }
   footer.team-footer .footer-wrap { max-width: 1280px; margin: 0 auto; }
   footer.team-footer .footer-grid {
@@ -974,7 +989,7 @@
     <div class="section-label">Section 07 &mdash; TIC Exit Analysis</div>
     <h2 class="section-title">The TIC Exit &mdash; Renovate and Sell the Existing Six Units</h2>
     <div class="section-divider"></div>
-    <div class="section-subtitle">A third pathway prices the two existing triplexes as they stand: a buyer renovates the six units and exits them one at a time as Tenancy-in-Common (TIC) interests &mdash; the entry-level ownership product that has repriced Echo Park and Silver Lake fourplexes over the past three years. This analysis underwrites <strong>all six units delivered vacant</strong>, assigns each a renovated exit value from closed TIC sales in the surrounding pocket, and solves backward to what a TIC developer can pay for the two parcels today &mdash; under a <strong>Base Case</strong> held to title square footage and a <strong>Best Case</strong> at the larger apparent footprint sizes, pending verification.</div>
+    <div class="section-subtitle">A third pathway prices the two existing triplexes as they stand: a buyer renovates the six units and exits them one at a time as Tenancy-in-Common (TIC) interests &mdash; the entry-level ownership product that has repriced Echo Park and Silver Lake fourplexes over the past three years. This analysis underwrites <strong>all six units delivered vacant</strong>, assigns each a renovated exit value from closed TIC sales in the surrounding pocket, and solves backward to what a TIC developer can pay for the two parcels today &mdash; under a <strong>Base Case</strong> held to title square footage, a <strong>Best Case</strong> at the larger apparent footprint sizes pending verification, and a <strong>Best Best Case</strong> that layers one new two-story ADU onto each lot.</div>
 
     <h3 class="serif" style="color:var(--navy);font-size:20px;margin-bottom:6px;">Base Case &mdash; Unit Mix &amp; Exit Values at Title Square Footage</h3>
     <div class="table-scroll">
@@ -1036,6 +1051,87 @@
       </table>
     </div>
     <p class="src-note">Best Case exits are anchored to the larger closed units: 3944&frac12; Marathon (821 SF 1BR, $572,887) supports the 817&ndash;905 SF 1BRs; 1160 Madison (970 SF, $698,000) and 1151 New Hampshire (1,090 SF, $710,000) bracket the 1,060 SF unit and the 1,189 SF front 2BR, with the Hyperion sales ($789&ndash;$857/SF) marking the ceiling. The blended &plusmn;$693/SF sits below the comp-set average of &plusmn;$728/SF. This scenario is valid only if the footprint square footage verifies.</p>
+
+    <h3 class="serif" style="color:var(--navy);font-size:20px;margin-top:26px;margin-bottom:6px;">Best Best Case &mdash; Best Case Plus One New Two-Story ADU on Each Lot</h3>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Property / Unit</th>
+            <th>Type</th>
+            <th class="num">SF Used</th>
+            <th class="num">Assumed TIC Exit</th>
+            <th class="num">$/SF</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="grp"><td colspan="5">New construction &mdash; one detached two-story ADU per lot, sold as additional TIC interests</td></tr>
+          <tr><td>2126 W Branden St &mdash; new ADU</td><td>2 BR / 1 BA &middot; 2-story</td><td class="num">600</td><td class="num">$525,000</td><td class="num">$875</td></tr>
+          <tr><td>2136 W Branden St &mdash; new ADU (rear lot)</td><td>3 BR / 2 BA &middot; 2-story</td><td class="num">1,000</td><td class="num">$725,000</td><td class="num">$725</td></tr>
+          <tr class="subject-row"><td colspan="3"><strong>Six renovated units &mdash; carried at Best Case values</strong></td><td class="num"><strong>$3,775,000</strong></td><td class="num"><strong>$693</strong></td></tr>
+          <tr class="subject-row"><td colspan="3"><strong>COMBINED GROSS TIC SELLOUT &mdash; 8 units, &plusmn;7,044 SF</strong></td><td class="num"><strong>$5,025,000</strong></td><td class="num"><strong>$713</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="src-note">ADU exits are anchored to the comp set with a new-construction premium over renovated vintage: the 600 SF 2+1 matches 2612 Marathon #1/4 (687 SF renovated, $525,000), and the 1,000 SF 3+2 sits between 1160 Madison / 1151 New Hampshire (970&ndash;1,090 SF renovated 2BRs, $698,000&ndash;$710,000) and the Hyperion ceiling with an extra bedroom. State ADU law allows detached ADUs on multifamily lots ministerially; the ADUs sell as additional TIC interests within each community. ADU permitting and construction extend the program to &plusmn;18 months.</p>
+
+    <h3 class="serif" style="color:var(--navy);font-size:20px;margin-top:30px;margin-bottom:6px;">The Three TIC Pathways at a Glance</h3>
+    <div class="path-grid">
+      <div class="path-card pa">
+        <div class="ph">
+          <div class="ptag">Base Case &middot; Title SF</div>
+          <div class="pname">$2,800,000</div>
+          <div class="punits">Gross sellout &mdash; 6 renovated units &middot; 3,233 SF</div>
+        </div>
+        <div class="pb-body">
+          <ul>
+            <li>Five 1BRs at $450,000 and the 733 SF 2BR at $550,000 &mdash; below the top of the closed range.</li>
+            <li>Held to the title record; no measurement credit taken.</li>
+            <li>Straight renovate-and-sell program on the existing buildings.</li>
+          </ul>
+        </div>
+        <div class="pmetric"><span class="l">Supportable price</span><span class="v">$1,610,000</span></div>
+        <div class="pmetric"><span class="l">Per unit</span><span class="v">&plusmn;$268,000</span></div>
+        <div class="pmetric"><span class="l">Program</span><span class="v">&plusmn;12 months</span></div>
+      </div>
+      <div class="path-card pc">
+        <div class="ph">
+          <div class="ptag">Best Case &middot; Footprint SF</div>
+          <div class="pname">$3,775,000</div>
+          <div class="punits">Gross sellout &mdash; 6 renovated units &middot; &plusmn;5,444 SF</div>
+        </div>
+        <div class="pb-body">
+          <ul>
+            <li>Units re-measured to their apparent footprints &mdash; nearly 70% more SF than title.</li>
+            <li>Exits of $500,000&ndash;$800,000 per unit at a blended &plusmn;$693/SF, below the comp average.</li>
+            <li>Verifying the square footage is the first diligence item.</li>
+          </ul>
+        </div>
+        <div class="pmetric"><span class="l">Supportable price</span><span class="v">$2,260,000</span></div>
+        <div class="pmetric"><span class="l">Per unit</span><span class="v">&plusmn;$377,000</span></div>
+        <div class="pmetric"><span class="l">Program</span><span class="v">&plusmn;12 months</span></div>
+      </div>
+      <div class="path-card pd">
+        <div class="ph">
+          <div class="ptag">Best Best Case &middot; + 2 ADUs</div>
+          <div class="pname">$5,025,000</div>
+          <div class="punits">Gross sellout &mdash; 6 renovated units + 2 new ADUs &middot; &plusmn;7,044 SF</div>
+        </div>
+        <div class="pb-body">
+          <ul>
+            <li>Adds a 1,000 SF two-story 3+2 ADU on 2136 ($725,000) and a 600 SF 2+1 on 2126 ($525,000).</li>
+            <li>Detached ADUs are ministerial on multifamily lots &mdash; no discretionary entitlement.</li>
+            <li>Eight sellable TIC interests across the two communities.</li>
+          </ul>
+        </div>
+        <div class="pmetric"><span class="l">Supportable price</span><span class="v">$2,530,000</span></div>
+        <div class="pmetric"><span class="l">Per unit</span><span class="v">&plusmn;$316,000</span></div>
+        <div class="pmetric"><span class="l">Program</span><span class="v">&plusmn;18 months</span></div>
+      </div>
+    </div>
+    <div class="risk-note">
+      <strong>How to read these.</strong> The three cards are one program at three levels of proof, not three separate deals: the Base Case is bankable today on the title record; the Best Case requires only a tape measure and prices the same six units at their apparent true sizes; the Best Best Case adds the ministerial ADU layer &mdash; no rezoning, no hearings &mdash; and is the scenario where the TIC pathway alone underwrites the full recommended price. Every exit value in all three cards traces to the closed sales below.
+    </div>
 
     <h3 class="serif" style="color:var(--navy);font-size:20px;margin-top:26px;margin-bottom:6px;">Closed TIC Sales &mdash; Echo Park / Silver Lake / Virgil Village</h3>
     <p style="font-size:13.5px;color:var(--muted);margin-bottom:12px;">Fourteen closed TIC unit sales from August 2025 through July 2026, drawn from TheMLS. Every comp is a renovated unit in a small (2&ndash;12 unit) vintage building &mdash; the same product a TIC developer would create at Branden Street. The comp set contains closed sales only; no directly comparable renovated TIC inventory was on market in this pocket at the time of writing.</p>
@@ -1100,9 +1196,9 @@
     <p class="src-note">Photos: TheMLS listing photography for each closed sale, reproduced from the comp records; some images are digitally staged per the listing remarks.</p>
 
     <div class="card" style="margin-top:24px;">
-      <h3>From Gross Sellout to a Supportable Purchase Price &mdash; Base Case vs Best Case</h3>
-      <p style="font-size:13px;color:var(--muted);margin-bottom:14px;">What a TIC developer can pay today, solving backward from each scenario's gross sellout: renovation to the comp-set standard, TIC formation, selling costs, carry, and a market development margin. The Base Case is underwritten to title square footage; the Best Case applies only if the larger footprint square footage verifies.</p>
-      <div class="grid-2" style="gap:24px;">
+      <h3>From Gross Sellout to a Supportable Purchase Price &mdash; Three Scenarios</h3>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:14px;">What a TIC developer can pay today, solving backward from each scenario's gross sellout: renovation to the comp-set standard, ADU construction where applicable, TIC formation, selling costs, carry, and a market development margin. The Base Case is underwritten to title square footage; the Best Case and Best Best Case apply only if the larger footprint square footage verifies.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;">
         <div>
           <ul class="tight">
             <li style="background:#F0EBDF;padding-left:10px;padding-right:10px;border-bottom:0;"><span class="l" style="color:var(--navy);font-weight:700;letter-spacing:0.5px;text-transform:uppercase;font-size:11.5px;">Base Case &mdash; Title SF (3,233)</span><span class="v"></span></li>
@@ -1133,12 +1229,28 @@
             <li style="border-bottom:0;"><span class="l">Per unit (blended)</span><span class="v">&plusmn;$377,000</span></li>
           </ul>
         </div>
+        <div>
+          <ul class="tight">
+            <li style="background:#DDEBD2;padding-left:10px;padding-right:10px;border-bottom:0;"><span class="l" style="color:var(--navy);font-weight:700;letter-spacing:0.5px;text-transform:uppercase;font-size:11.5px;">Best Best Case &mdash; + 2 ADUs (verify)</span><span class="v"></span></li>
+            <li><span class="l">Gross TIC sellout (8 units, delivered vacant)</span><span class="v">$5,025,000</span></li>
+            <li><span class="l">Renovation to comp standard (6 &times; $100,000)</span><span class="v">($600,000)</span></li>
+            <li><span class="l">ADU construction (1,000 SF + 600 SF, 2-story)</span><span class="v">($650,000)</span></li>
+            <li><span class="l">TIC formation, survey &amp; legal (8 interests)</span><span class="v">($40,000)</span></li>
+            <li><span class="l">Selling &amp; closing costs (5% of sellout)</span><span class="v">($251,000)</span></li>
+            <li><span class="l">Financing &amp; carry (&plusmn;18-month program)</span><span class="v">($200,000)</span></li>
+            <li><span class="l">Developer margin (15% of sellout)</span><span class="v">($754,000)</span></li>
+            <li class="total"><span class="l">SUPPORTABLE ACQUISITION &mdash; BOTH PARCELS</span><span class="v">$2,530,000</span></li>
+            <li style="border-bottom:0;padding-top:4px;"><span class="l">2126 W Branden St (3 units + 2+1 ADU)</span><span class="v">&plusmn;$1,195,000</span></li>
+            <li style="border-bottom:0;"><span class="l">2132&ndash;2136 W Branden St (3 units + 3+2 ADU)</span><span class="v">&plusmn;$1,335,000</span></li>
+            <li style="border-bottom:0;"><span class="l">Per unit (blended, 8 units)</span><span class="v">&plusmn;$316,000</span></li>
+          </ul>
+        </div>
       </div>
-      <p style="font-size:12px;color:var(--muted);margin-top:14px;">Allocation is proportional to each property's share of gross sellout. Renovation reflects the full kitchen/bath/systems scope visible in the comp set, stepped up to $100,000/unit in the Best Case for the larger interiors; TIC exits require no condo conversion or DRE public report, and comp-set financing was offered at 10%&ndash;15% down through fractional lenders.</p>
+      <p style="font-size:12px;color:var(--muted);margin-top:14px;">Allocation is proportional to each property's share of gross sellout. Renovation reflects the full kitchen/bath/systems scope visible in the comp set, stepped up to $100,000/unit in the Best and Best Best Cases for the larger interiors; ADU construction is carried at $400,000 (1,000 SF 3+2) and $250,000 (600 SF 2+1) all-in. TIC exits require no condo conversion or DRE public report, and comp-set financing was offered at 10%&ndash;15% down through fractional lenders.</p>
     </div>
 
     <div class="risk-note">
-      <strong>How the TIC exit fits the valuation.</strong> The Base Case supports &plusmn;$1.6M for the two parcels &mdash; a floor value for the standing improvements, not a competitor to the $2,500,000 recommendation, which is carried by the land and the conceptual 39-unit density-bonus path (Sections 05&ndash;06). The pathway matters for two reasons. First, it widens the buyer pool: TIC operators underwrite the property with no entitlement risk and a 12-month program, and the comp set shows their exit market is liquid at $440,000&ndash;$620,000 per renovated unit in this pocket. Second, the square-footage question is live: if the units measure at their apparent footprints rather than title, the Best Case supports &plusmn;$2.26M &mdash; at which point the TIC bid begins to compete with the land bid and materially strengthens the Ownership's negotiating floor. Key assumptions to disclose: all six units delivered vacant (the buildings are RSO &mdash; the path and cost of vacancy is buyer diligence), renovation at $80,000&ndash;$100,000/unit, and a 15% developer margin.
+      <strong>How the TIC exit fits the valuation.</strong> The Base Case supports &plusmn;$1.6M for the two parcels &mdash; a floor value for the standing improvements, not a competitor to the $2,500,000 recommendation, which is carried by the land and the conceptual 39-unit density-bonus path (Sections 05&ndash;06). The pathway matters for two reasons. First, it widens the buyer pool: TIC operators underwrite the property with no entitlement risk and a 12-month program, and the comp set shows their exit market is liquid at $440,000&ndash;$620,000 per renovated unit in this pocket. Second, the square-footage question is live: if the units measure at their apparent footprints rather than title, the Best Case supports &plusmn;$2.26M &mdash; at which point the TIC bid begins to compete with the land bid and materially strengthens the Ownership's negotiating floor. And with the ministerial ADU layer, the Best Best Case supports &plusmn;$2.53M &mdash; the TIC pathway alone underwriting the full $2,500,000 recommendation. Key assumptions to disclose: all six units delivered vacant (the buildings are RSO &mdash; the path and cost of vacancy is buyer diligence), renovation at $80,000&ndash;$100,000/unit, ADU construction at &plusmn;$400/SF, and a 15% developer margin.
     </div>
   </div>
 </section>
